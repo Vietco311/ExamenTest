@@ -30,4 +30,9 @@ public class Tache {
     public int getDuree() {
         return duree;
     }
+
+    @Override
+    public String toString() {
+        return "Nom: " + titre;
+    }
 }
