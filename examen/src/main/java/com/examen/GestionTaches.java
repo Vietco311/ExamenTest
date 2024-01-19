@@ -26,6 +26,15 @@ public class GestionTaches {
         }
     }
 
+    public boolean tacheExiste(String t){
+        for (Tache ta : liste) {
+            if (ta.getTitre().equals(t)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean verifierTache(String t){
         for (Tache ta : liste){
             if (ta.getTitre() == t){
